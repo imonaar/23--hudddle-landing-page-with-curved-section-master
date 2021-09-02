@@ -1,0 +1,69 @@
+.header{
+    inline-size: 100%;
+    padding-block-start: 1.5rem;
+    max-width: 81.0625rem;
+
+    &__wrapper{
+        inline-size: 100%;
+        display: grid;
+        gap: 7rem;
+        justify-items: center;
+    }
+
+    nav{
+        inline-size: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        block-size: 24px;
+
+        img{
+            block-size: 1rem;
+            inline-size: 6rem;
+        }
+    }
+
+    &__hero{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-inline: 1rem;
+        inline-size: 100%;
+        max-inline-size: 63.5625rem;
+
+        @include tabplus{
+            margin-inline: 0;
+        }
+        
+        h1{
+            font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
+            line-height: clamp(2.25rem, 1.4577rem + 3.3803vw, 4.5rem);
+
+            @include tabplus{
+                letter-spacing: 0.25px;
+            }
+        }
+        p{
+            font-size: clamp(0.875rem, 0.7430rem + 0.5634vw, 1.25rem);
+            line-height: clamp(1.25rem, 1.0299rem + 0.9390vw, 1.875rem);
+            margin-bottom: 1rem;
+            max-inline-size: 55ch;
+        }
+    }
+
+    &__image{
+        inline-size: 100%;
+        block-size: 209px;
+        margin-inline: 1rem;
+        background: url('../../images/screen-mockups.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-inline-size: 63.5625rem;
+
+        @include tabplus{
+            block-size: 45rem;
+        }
+    }
+}
