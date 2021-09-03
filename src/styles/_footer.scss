@@ -1,0 +1,133 @@
+.footer{
+    color: white;
+    inline-size: 100%;
+    position: relative;
+    inline-size: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    display: flex;
+    justify-content: center;
+    margin-block-start: 18.75rem;
+    padding-block-end: 2rem;
+
+    @include tabplus{
+        margin-block-start: 20.5rem;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        block-size: 60px;
+        inline-size: 100%;
+        background-color: red;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        background: url('../../images/bg-footer-top-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include tabplus{
+            block-size: 150px;
+            background: url('../../images/bg-footer-top-desktop.svg');
+            
+        }
+    }
+    
+    
+    &__wrapper{
+        padding-block-start: 4.5rem;
+        inline-size: 100%;
+        display: grid;
+        gap: 6.5rem;
+        max-inline-size: 75rem;
+        padding-inline: 1.5rem;
+
+        @include tabplus{
+            grid-template-columns: 1fr 1fr;
+            gap: 21.25rem;
+            padding-inline: 0;
+        }
+    }
+
+    &__newsletter{
+        display: grid;
+        gap: 1rem;
+
+        h4{
+            text-transform: uppercase;
+            font-size: 1.375rem;
+        }
+
+        p{
+            font-size: .875rem;
+            line-height: 24px;
+        }
+        form{
+            margin-block-start: 15px;
+            display: grid;
+            gap: 1rem;
+
+            input{
+                border-radius: 5px;
+                font-size: 1rem;
+                padding-block:10px ;
+                padding-inline: 10px;
+            }
+
+            button{
+                justify-self: right;
+            }
+        }
+    }
+
+    &__contact{
+        display: grid;
+        justify-items: flex-start;
+        gap: 1rem;
+
+        p{
+            font-size: .875rem;
+            line-height: 24px;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            max-inline-size: 40ch;
+        }
+
+        div{
+            inline-size: 100%;
+            display: flex;
+            gap: 1rem;
+            background-color: transparent;
+
+            img{
+                block-size: 24px;
+                inline-size: 24px;
+                object-fit: contain;
+            }
+        }
+
+        section{
+            display: flex;
+            gap: 1rem;
+            margin-block-start: 2rem;
+
+            @include tabplus{
+                margin-block-start: 4rem;
+            }
+
+            a{
+                cursor: pointer;
+
+                &:hover{
+                    svg{
+                        background-color: #00C7FA;
+                    }
+                }
+            }
+        }
+
+        @include tabplus{
+            grid-row: 1;
+        }
+    }
+}

@@ -2,6 +2,11 @@
     inline-size: 100%;
     padding-block-start: 1.5rem;
     max-width: 81.0625rem;
+    padding-inline: 1.5rem;
+
+    @include tabplus{
+        padding-inline: 0;
+    }
 
     &__wrapper{
         inline-size: 100%;
@@ -42,7 +47,7 @@
             line-height: clamp(2.25rem, 1.4577rem + 3.3803vw, 4.5rem);
 
             @include tabplus{
-                letter-spacing: 0.25px;
+                letter-spacing: 0.25px  ;
             }
         }
         p{
@@ -55,7 +60,7 @@
 
     &__image{
         inline-size: 100%;
-        block-size: 209px;
+        block-size: 13.0625rem;
         margin-inline: 1rem;
         background: url('../../images/screen-mockups.svg');
         background-size: cover;
