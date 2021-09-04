@@ -45,10 +45,6 @@
         h1{
             font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
             line-height: clamp(2.25rem, 1.4577rem + 3.3803vw, 4.5rem);
-
-            @include tabplus{
-                letter-spacing: 0.25px  ;
-            }
         }
         p{
             font-size: clamp(0.875rem, 0.7430rem + 0.5634vw, 1.25rem);
