@@ -161,6 +161,7 @@
             gap: 1rem;
 
             @include tabplus{
+                text-align: left;
                 &-reverse{
                     grid-row: 1;
                 }
