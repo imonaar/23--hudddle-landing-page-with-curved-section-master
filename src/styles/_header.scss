@@ -6,6 +6,7 @@
 
     @include tabplus{
         padding-inline: 0;
+        padding-block-start: 4.625rem;
     }
 
     &__wrapper{
@@ -26,9 +27,18 @@
         align-items: center;
         block-size: 24px;
 
+        @include tabplus{
+            block-size: 40px;
+        }
+
         img{
             block-size: 1rem;
             inline-size: 6rem;
+
+            @include tabplus{
+                block-size: 2.375rem;
+                inline-size: 15rem  ;
+            }
         }
     }
 
