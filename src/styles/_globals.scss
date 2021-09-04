@@ -63,6 +63,11 @@ h1, h2, h3, h4{
         padding: .375rem 1.125rem;
         border-radius: 18px;
         box-shadow: 0 0 4px rgba(255,82,191,0.4);
+
+        @include tabplus{
+            font-size: 1rem;
+            padding: .5625rem 1.875rem;
+        }
     }
 
     &-main{
