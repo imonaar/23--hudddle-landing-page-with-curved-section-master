@@ -36,21 +36,26 @@
     &__wrapper{
         padding-block-start: 4.5rem;
         inline-size: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 6.5rem;
         max-inline-size: 75rem;
         padding-inline: 1.5rem;
 
         @include tabplus{
-            grid-template-columns: 1fr 1fr;
-            gap: 21.25rem;
-            padding-inline: 0;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap: 2rem;
         }
     }
 
     &__newsletter{
         display: grid;
         gap: 1rem;
+        inline-size: 100%;
+        max-inline-size: 32.5rem;
+        
 
         h4{
             text-transform: uppercase;
@@ -88,6 +93,7 @@
         display: grid;
         justify-items: flex-start;
         gap: 1rem;
+        inline-size: 100%;
 
         p{
             font-size: .875rem;

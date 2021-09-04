@@ -59,9 +59,10 @@
         block-size: 13.0625rem;
         margin-inline: 1rem;
         background: url('../../images/screen-mockups.svg');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         max-inline-size: 63.5625rem;
+        background-position: center;
 
         @include tabplus{
             block-size: 45rem;
