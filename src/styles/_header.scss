@@ -13,6 +13,10 @@
         display: grid;
         gap: 7rem;
         justify-items: center;
+
+        @include tabplus{
+            gap: 14.3125rem;
+        }
     }
 
     nav{
